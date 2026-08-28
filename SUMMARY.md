@@ -5,3 +5,5 @@
   * [🧃 Juice Shop](owasp/juice-shop/README.md)
     * [⭐️ 1 Star Challenges](owasp/juice-shop/1-star-challenges/README.md)
       * [Challenges :](owasp/juice-shop/1-star-challenges/challenges.md)
+    * [⭐️⭐️ 2 Star Challenges](owasp/juice-shop/2-star-challenges/README.md)
+      * [Challenges :](owasp/juice-shop/2-star-challenges/challenges.md)

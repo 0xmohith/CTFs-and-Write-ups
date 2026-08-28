@@ -10,3 +10,11 @@ Each Juice Shop writeup includes:
 * OWASP category it maps to
 * Steps to solve (with Burp Suite / browser dev tools where relevant)
 * Screenshot of the solved challenge (score board confirmation)
+
+### Why this exists
+
+Juice Shop is a common starting point for learning web app security hands-on. These writeups are meant as a personal log and reference — useful for revisiting techniques later, and for anyone else working through the same challenges who wants a second perspective before looking up a full walkthrough.
+
+### Disclaimer
+
+All testing was performed against a local instance of Juice Shop, a deliberately vulnerable application built for this purpose. None of the techniques here should be used against systems you don't own or have explicit permission to test.

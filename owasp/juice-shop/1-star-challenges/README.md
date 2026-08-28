@@ -1,44 +1,30 @@
 # ⭐️ 1 Star Challenges
 
-I have documented all the 1 Star challenges in the below format.
+A collection of write-ups for the 1 Star (⭐) challenges from ⁠[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/).
+
+Each challenge is documented with a simple and consistent structure covering the objective, approach, exploitation, result, and key takeaway.
+
+***
+
+### Write-Up Structure :&#x20;
 
 ```
 [Challenge Name]
 ├── Category: [Category]
-│
 ├──  Objective
-│   └── [What do you need to achieve?]
-│
 ├──  Approach
-│   └── [What did you notice and what did you try?]
-│
-├──  Exploitation
-│   └── [Payload / command / steps used.]
-│
-├──  Result
-│   └── [How the challenge was successfully solved.]
-│
-└──  Key Takeaway
-    └── [1–2 sentences about what you learned.]
+├── Key Takeaway
+└── Screenshot(s)
 ```
 
+***
 
+### 📈 Progress :&#x20;
 
-## 📊 Progress
+1 Star Challenges\
+\[█████████████░░░░░░░░░░░░░░] 13 / 27
 
-#### **13 / 27** challenges solved
+48.1% Complete
 
-* [x] Score Board
-* [x] Privacy Policy
-* [x] Confidential Document
-* [x] Error Handling
-* [x] DOM XSS
-* [x] Bonus DOM XSS
-* [x] Missing Encoding
-* [x] Mass Dispel
-* [x] Repetitive Registration
-* [x] Exposed Metrics
-* [x] Outdated Allowlist
-* [x] Web3 Sandbox
-* [x] Zero Stars
-* [ ] _(remaining 14 challenges — not yet solved)_
+Status: 🚧 In Progress\
+Current Progress: 13 / 27 ⭐ challenges
