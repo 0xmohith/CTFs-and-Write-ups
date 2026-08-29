@@ -63,3 +63,46 @@ I already had the admin's email from an earlier challenge, so the obvious first 
 <div><figure><img src="../../.gitbook/assets/Screenshot 2026-08-28 at 10.47.05 PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2026-08-28 at 10.51.13 PM.png" alt=""><figcaption></figcaption></figure></div>
 
 ***
+
+## Challenge Name : Admin Section&#x20;
+
+**Category :** Broken Access Control
+
+**Objective :** To access the administration section of the store.
+
+Just like the "score board" challenge, I searched for the path for the admin section, and it was openly available in the main.js file, without any authorization checks.
+
+`http://localhost:3000/#/administration`
+
+**Key Takeaways :** Client-side Java Script isn't a security boundary. If the server doesn't check who's asking, anyone who reads the source code gets in.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-28 at 11.18.23 PM.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Challenge Name : Five-Star Feedback
+
+**Category :** Broken Access Control
+
+**Objective :** To get rid of all 5-star feedbacks.
+
+Solving the Admin Section challenge hands you admin privileges, which meant I could see every 5-star review and just delete them.
+
+`http://localhost:3000/#/administration`
+
+**Key Takeaways :** No proper auth checks, can lead to severe security breaches, allowing unauthorized users to compromise systems and data. Implementing a multi-layered security strategy across the codebase could prevent it.
+
+***
+
+## Challenge Name : View Basket
+
+**Category :** Broken Access Control
+
+**Objective :** To view another user's shopping basket.
+
+Intercepting the GET requests to view one's own basket, revealed the user id in the request line itself. Just by changing the user id, I was able to view someone else's shopping basket.
+
+**Key Takeaways :** It is a classic example of IDOR (Insecure Direct Object Reference), which means the application is relying entirely on the client-side input to determine access rights, rather than validating. Writing Contextual Access Control Checks would prevent it.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-28 at 11.22.50 PM.png" alt=""><figcaption></figcaption></figure>
+
