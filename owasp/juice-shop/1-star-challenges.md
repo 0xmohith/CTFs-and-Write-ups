@@ -1,4 +1,4 @@
-# Challenges :
+# ⭐️ 1 Star Challenges
 
 ## Challenge Name : Score Board
 
@@ -12,7 +12,7 @@ Hidden routes usually still show up in the JS files even when there's no link to
 
 **Key takeaway:** Bundled JS is a goldmine for hidden functionality. If a page isn't linked anywhere, that doesn't mean it isn't there — check the client-side code before assuming it's locked down.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-25 at 8.59.04 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-25 at 8.59.04 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -40,7 +40,7 @@ Browsing through the site, I found a link on the "About Us" page pointing to `ft
 
 **Key takeaway:** One exposed file in a directory is often a sign there are more. Once you find a path like `/ftp`, always check whether the whole directory is browsable — directory listings leak far more than the single file that led you there.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-25 at 10.27.03 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-25 at 10.27.03 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -54,7 +54,7 @@ Errors like this usually come from tampering with URL paths, parameters, or form
 
 **Key takeaway:** A plain GET request can still break an app if the inputs aren't validated on the backend. And a verbose error response — stack traces especially — is a security problem in its own right, not just a bug.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-25 at 10.50.55 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-25 at 10.50.55 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -80,7 +80,7 @@ Noticed a picture on the page that wasn't loading. Dev tools showed the image so
 
 **Key takeaway:** Special characters in filenames or URLs need encoding, or the browser silently drops part of the path. A broken image link is sometimes just an encoding bug, not a missing file.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 at 1.42.02 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 at 1.42.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -94,7 +94,7 @@ Dug through the frontend JS for anything related to closing notifications, and f
 
 **Key takeaway:** Source code often hides shortcuts and functions that never show up anywhere in the UI. Worth a look whenever a task feels like it should have a faster path.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 at 3.12.33 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 at 3.12.33 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -108,7 +108,7 @@ The form enforces matching passwords, but that's only a frontend rule — so I s
 
 **Key takeaway:** Client-side checks are conveniences, not security. If the backend isn't independently validating the same thing, anyone can bypass the form entirely by crafting the request directly.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 at 3.27.50 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 at 3.27.50 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -126,7 +126,7 @@ It worked — server performance and traffic data, all sitting there unauthentic
 
 **Key takeaway:** Monitoring endpoints are built for internal tooling, not the public internet. Leave one open without auth and it leaks real operational detail about your app and infrastructure.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 at 3.46.04 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 at 3.46.04 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -168,4 +168,4 @@ The UI won't let you go below one star, so that's clearly a frontend-only restri
 
 **Key takeaway:** Same story as the password fields above — a frontend minimum is worthless if the backend doesn't enforce it too. Anything the UI "prevents" is worth testing at the request level.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 at 9.08.04 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 at 9.08.04 PM.png" alt=""><figcaption></figcaption></figure>
