@@ -1,6 +1,6 @@
 # 🧃 Juice Shop
 
-OWASP Juice Shop v20.2.0 is an intentionally insecure web application used to demonstrate the OWASP Top 10 and other real-world vulnerabilities in a hands-on way.
+[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) v20.2.0 is an intentionally insecure web application used to demonstrate the OWASP Top 10 and other real-world vulnerabilities in a hands-on way.
 
 Write-ups for this section are organized by challenge difficulty (⭐ to ⭐⭐⭐⭐⭐⭐) and mapped to their corresponding OWASP category where applicable.
 
@@ -10,6 +10,26 @@ Each Juice Shop writeup includes:
 * OWASP category it maps to
 * Steps to solve (with Burp Suite / browser dev tools where relevant)
 * Screenshot of the solved challenge (score board confirmation)
+
+### Write-Up Structure :&#x20;
+
+```
+[Challenge Name]
+├── Category: [Category]
+├──  Objective
+├──  Approach
+├── Key Takeaway
+└── Screenshot(s)
+```
+
+### 📈 Progress :&#x20;
+
+#### 1 Star Challenges \[█████████████░░░░░░░░░░░░░░] 13 / 27
+
+48.1% Complete
+
+Status: 🚧 In Progress\
+Current Progress: 13 / 27 ⭐ challenges
 
 ### Why this exists
 
