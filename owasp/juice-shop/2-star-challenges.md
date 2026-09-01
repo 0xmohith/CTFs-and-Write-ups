@@ -106,3 +106,19 @@ Intercepting the GET requests to view one's own basket, revealed the user id in 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-28 at 11.22.50 PM.png" alt=""><figcaption></figcaption></figure>
 
+***
+
+## Challenge Name : Deprecated Interface
+
+**Category :** Security Misconfiguration
+
+**Objective :** To use a deprecated b2b interface that was not properly shut down.
+
+A B2B interface is a digital connection that lets two companies share data, and one of the common technologies used is 'File Uploads'. Upon inspection of the source code, I discovered that the B2B interface allows uploads of `.xml` files. Then, I used the complaint interface to upload a `.xml` file.
+
+**Key Takeaways :** Because these interfaces handle sensitive data, leaving old or unused B2B upload forms active can create a major security risk. They must be shut down properly, by completely removing the legacy code.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-01 at 12.25.05 PM.png" alt=""><figcaption></figcaption></figure>
+
+***
+
