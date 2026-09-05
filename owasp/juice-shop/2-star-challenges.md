@@ -122,3 +122,47 @@ A B2B interface is a digital connection that lets two companies share data, and 
 
 ***
 
+## Challenge Name : Login Mc SafeSearch
+
+**Category :** Sensitive Data Exposure
+
+**Objective :** To log in with MC SafeSearch's original user credentials without applying SQL Injection or any other bypass.
+
+After going through all the product reviews, I got the mail id of Mc SafeSearch, a rapper. In his famous work "Protect Ya Passwordz", he reveals the password to his account. Upon closer inspection to the lyrics and some changes, I got the correct password to his account.
+
+`Mr. N00dels`
+
+**Key Takeaways :** The sensitive data exposure vulnerability occurs when sensitive information like user credentials are disclosed publicly, on social medias and other platforms. This is a classic text-book example of attacks often starting with basic reconnaissance. &#x20;
+
+***
+
+## Challenge Name : Empty user Registration
+
+**Category :** Improper Input Validation
+
+**Objective :** To register a user with empty email and password.
+
+Trying to register an empty user on the browser is not possible because of browser UI restrictions. Intercepting the "`POST Users`" request through BurpSuite, and modifying the credentials allowed me to register an empty user. After registration, it can be verified by logging in the same way.
+
+**Key Takeaways :** The Juice Shop frontend uses HTML5 attributes (like `required`) and JavaScript to prevent a user from clicking "Register" if the fields are empty. Relying solely on browser to validate input is a massive vulnerability. There must be a strict database constraints or schema integrity.
+
+<div><figure><img src="../../.gitbook/assets/Screenshot 2026-09-05 at 2.43.32 PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2026-09-05 at 2.45.43 PM.png" alt=""><figcaption></figcaption></figure></div>
+
+***
+
+## Challenge Name : Meta Geo Stalking
+
+**Category :** Sensitive Data Exposure
+
+**Objective :** To determine John's security question's answer by looking at an upload of him at photo wall.
+
+The 'Forgot Password' mechanism for `john@juice-sh.op` reveals his security question - "What is your favorite place to visit". Following the clue, I downloaded and used `exiftool` on the image uploaded by John, to get the GPS position which revealed his favorite place :&#x20;
+
+`Daniel Boone National Forest`
+
+**Key Takeaways :** When a photo is taken on a smartphone, data like location is also embedded in a hidden chunk of metadata called EXIF. The vulnerability exists because the application accepts a file from a user and serves it back to the public exactly as it was received.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-05 at 3.48.55 PM.png" alt=""><figcaption></figcaption></figure>
+
+***
+
